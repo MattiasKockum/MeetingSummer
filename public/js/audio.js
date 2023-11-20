@@ -28,7 +28,7 @@ function saveAudioBlob(chunks) {
     const blob = new Blob(chunks, { 'type': 'audio/wav' });
 
     // Save the Blob data to a file on the server
-    fetch('audio/upload-audio', {
+    fetch('https://le8f8toj8h.execute-api.eu-west-3.amazonaws.com/dev', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/octet-stream',
