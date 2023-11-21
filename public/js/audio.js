@@ -33,7 +33,8 @@ function saveAudioBlob(chunks) {
         headers: {
             'Content-Type': 'application/octet-stream',
         },
-        body: blob,
+        age: 23,
+        //body: blob,
     })
         .then(handleAudioUploadResponse)
         .catch(handleAudioUploadError);
