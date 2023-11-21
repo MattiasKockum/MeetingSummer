@@ -30,10 +30,10 @@ function saveAudioBlob(chunks) {
     // Save the Blob data to a file on the server
     fetch('https://p0cg69m8hb.execute-api.eu-west-3.amazonaws.com/dev/upload-audio', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/octet-stream',
-        },
-        body: blob,
+        //headers: {
+        //    'Content-Type': 'application/octet-stream',
+        //},
+        body: "blob",
     })
         .then(handleAudioUploadResponse)
         .catch(handleAudioUploadError);
