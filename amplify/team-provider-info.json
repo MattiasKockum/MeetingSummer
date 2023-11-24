@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-meetingsummer-dev-215323-authRole",
+      "UnauthRoleArn": "arn:aws:iam::008963100236:role/amplify-meetingsummer-dev-215323-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::008963100236:role/amplify-meetingsummer-dev-215323-authRole",
+      "Region": "eu-west-3",
+      "DeploymentBucketName": "amplify-meetingsummer-dev-215323-deployment",
+      "UnauthRoleName": "amplify-meetingsummer-dev-215323-unauthRole",
+      "StackName": "amplify-meetingsummer-dev-215323",
+      "StackId": "arn:aws:cloudformation:eu-west-3:008963100236:stack/amplify-meetingsummer-dev-215323/82b05780-8b0b-11ee-bd2a-0ecb6485250c",
+      "AmplifyAppId": "dywooqx2054ij"
+    }
+  }
+}
