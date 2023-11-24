@@ -1,16 +1,16 @@
-import './App.css';
 import React from 'react';
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import AudioRecordingPage from './AudioRecordingPage';
 import SignIn from './SignIn';
-import AudioRecorder from './AudioRecorder';
 
 function App() {
   return (
     <div>
       <h1>Meeting Summer</h1>
-      <SignIn />
-      <AudioRecorder />
+      <AudioRecordingPage /> {/* Audio recording page */}
+      <SignIn /> {/* Sign-in page */}
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
