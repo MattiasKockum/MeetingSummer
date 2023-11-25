@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - npm install --force
     build:
       commands:
         - npm run build
@@ -14,11 +14,3 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
-  postBuild:
-    commands:
-      - npm ci
-backend:
-  phases:
-    build:
-      commands:
-        - amplifyPush --simple
