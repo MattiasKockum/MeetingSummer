@@ -1,0 +1,14 @@
+{
+  "resourceName": "RawAudio",
+  "policyUUID": "a315eb73",
+  "bucketName": "meetingsummer-raw-audio",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
