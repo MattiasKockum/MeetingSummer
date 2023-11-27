@@ -14,6 +14,13 @@
     "categories": {
       "auth": {
         "meetingsummer05455c69": {}
+      },
+      "function": {
+        "webmtomp3": {
+          "deploymentBucketName": "amplify-meetingsummer-dev-215323-deployment",
+          "s3Key": "amplify-builds/webmtomp3-304d4974544234696c49-build.zip",
+          "secretsPathAmplifyAppId": "dywooqx2054ij"
+        }
       }
     }
   }

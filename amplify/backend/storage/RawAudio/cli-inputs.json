@@ -9,6 +9,6 @@
     "READ",
     "DELETE"
   ],
-  "triggerFunction": "NONE",
+  "triggerFunction": "webmtomp3",
   "groupAccess": {}
 }

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { ReactMic } from 'react-mic';
 import { uploadData } from 'aws-amplify/storage';
-import { getCurrentUser } from 'aws-amplify/auth';
 
 const AudioRecorder = () => {
   const [isRecording, setIsRecording] = useState(false);
@@ -23,14 +22,12 @@ const AudioRecorder = () => {
     console.log('recordedBlob is: ', recordedBlob);
 
     try {
-      const { username, userId, signInDetails } = await getCurrentUser();
-      const key = `${userId}` + new Date().toISOString() + '.webm';
+      const key = 'raw_audio_' + new Date().toISOString() + '.webm';
       const result = await uploadData({
         key: key,
         data: recordedBlob.blob,
         options: {
           accessLevel: 'private',
-          //onProgress // Optional progress callback.
         }
       }).result;
       console.log('Succeeded: ', result);
