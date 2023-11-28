@@ -1,0 +1,7 @@
+{
+  "permissions": {},
+  "lambdaLayers": [],
+  "secretNames": [
+    "OPENAI_API_KEY"
+  ]
+}
