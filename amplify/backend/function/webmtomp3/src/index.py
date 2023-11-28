@@ -5,6 +5,7 @@ def handler(event, context):
     bucket = 'meetingsummer-raw-audio215323-dev'
     file_key = event['Records'][0]['s3']['object']['key']
 
+    print(f"event : {event}")
     print(f"file_key : {file_key}")
 
     # Download the audio data from S3
