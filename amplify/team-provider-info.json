@@ -18,7 +18,7 @@
       "function": {
         "webmtomp3": {
           "deploymentBucketName": "amplify-meetingsummer-dev-215323-deployment",
-          "s3Key": "amplify-builds/webmtomp3-304d4974544234696c49-build.zip",
+          "s3Key": "amplify-builds/webmtomp3-4b65676b75662b374d6c-build.zip",
           "secretsPathAmplifyAppId": "dywooqx2054ij"
         }
       }
