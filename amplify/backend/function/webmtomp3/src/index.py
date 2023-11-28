@@ -2,11 +2,13 @@ import boto3
 from openai import OpenAI
 
 def handler(event, context):
-    bucket = 'meetingsummer-raw-audio215323-dev'
-    file_key = event['Records'][0]['s3']['object']['key']
+    bucket = event["Records"][0]["s3"]["bucket"]["name"]
+    file_key = event["Records"][0]["s3"]["object"]["key"]
 
     print(f"event : {event}")
-    print(f"file_key : {file_key}")
+    print(f"original file_key : {file_key}")
+    file_key = "private/eu-west-3:b6bb18b2-7e44-4a90-8e7e-9520e5c97b25/b37d8f0c-32d2-4c03-8c0a-6e1a984a9c732023-11-25T21:28:08.553Z.webm"
+    print(f"modified file_key : {file_key}")
 
     # Download the audio data from S3
     s3 = boto3.client('s3')
