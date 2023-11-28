@@ -6,7 +6,7 @@ const AudioRecordingPage = () => {
   return (
     <div>
       <h2>Audio Recording Page</h2>
-      <h3>Please record your meeting</h3>
+      <h3>Please press record button</h3>
       <AudioRecorder />
     </div>
   );
