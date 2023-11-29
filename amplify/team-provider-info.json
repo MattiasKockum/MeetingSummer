@@ -18,8 +18,13 @@
       "function": {
         "webmtomp3": {
           "deploymentBucketName": "amplify-meetingsummer-dev-215323-deployment",
-          "s3Key": "amplify-builds/webmtomp3-3073335162694b774963-build.zip",
+          "s3Key": "amplify-builds/webmtomp3-325662456353306f2f79-build.zip",
           "secretsPathAmplifyAppId": "dywooqx2054ij"
+        },
+        "summer": {
+          "openaiApiKey": "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",
+          "deploymentBucketName": "amplify-meetingsummer-dev-215323-deployment",
+          "s3Key": "amplify-builds/summer-2f622b57444d36516c37-build.zip"
         }
       }
     }
