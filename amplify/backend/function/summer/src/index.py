@@ -22,7 +22,8 @@ def handler(event, context):
     # Download the text data from S3
     s3 = boto3.client('s3')
     response = s3.get_object(Bucket=bucket, Key=file_key)
-    meeting_text = response['Body'].read()
+    meeting_text_bytes = response['Body'].read()
+    meeting_text = str(meeting_text_bytes)[2:-1]
 
     print(f"Downloaded text : {meeting_text}")
 
@@ -36,7 +37,8 @@ def handler(event, context):
             messages=[{
                 "role": "user",
                 "content": preprompt + meeting_text
-                }]
+                }],
+            model="gpt-3.5-turbo"
     )
 
     print(f"Obtained abstract : {abstract}")

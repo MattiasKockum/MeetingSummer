@@ -24,7 +24,7 @@
         "summer": {
           "openaiApiKey": "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",
           "deploymentBucketName": "amplify-meetingsummer-dev-215323-deployment",
-          "s3Key": "amplify-builds/summer-2f622b57444d36516c37-build.zip"
+          "s3Key": "amplify-builds/summer-665872536d715052784e-build.zip"
         }
       }
     }
